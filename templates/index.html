@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to the Library of the Unseen</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #111; /* Dark background for rest of page */
+      color: #f5f5f5;
+    }
+
+    /* Hero section with its own image bg */
+    .hero {
+      background-image: url('{{ url_for('static', filename='IMG/bg.jpeg') }}');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 140px 20px 100px;
+      text-align: center;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); /* dark overlay */
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      color: #e0c97f;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      text-decoration: none;
+      background-color: #444;
+      color: #e0c97f;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: #e0c97f;
+      color: #111;
+    }
+
+    .content {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .content h2 {
+      color: #e0c97f;
+    }
+
+  
+    .content p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #000;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero section for the Home page-->
+  <header class="hero">
+    <h1>Library of the Unseen</h1>
+    <p><p>I dare you to uncover stories buried in dust and dread, once opened, they never truly close.</p>
+ </p>
+    <a href="{{ url_for('books') }}">Enter the Library</a>
+  </header>
+
+  <!--description text -->
+  <section class="content">
+    <h2>What Awaits You?</h2>
+    <p>
+    Step into a cursed collection of forbidden stories, each page inked in fear and folklore.
+    Behind every cover lurk ghosts, witches, goblins, and things that should never have been written.
+    Wander haunted mansions, hear whispers in forgotten woods, and meet the shadows hiding in the walls.
+    These stories are waiting to follow you.
+  </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Library of the Unseen | Stay curious, stay spooky</p>
+  </footer>
+
+</body>
+</html>

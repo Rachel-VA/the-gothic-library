@@ -1,0 +1,16 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #111;
+  color: #f5f5f5;
+  margin: 2em;
+}
+h1 {
+  color: #c5b358;
+}
+a {
+  color: #88f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
