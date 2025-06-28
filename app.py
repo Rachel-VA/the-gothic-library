@@ -1,30 +1,4 @@
-"""
-Activate virtual environment using: venv\Scripts\activate
 
-packages for hosting:
-pip install gunicorn
-pip freeze > requirements.txt
-
-check for versions of Flask and packages versions compatible for render platform:
-(venv) C:\UAT_MS\MS587 - Databases and Web Development\SQLite-Lib-of-the-unseen>pip freeze
-blinker==1.9.0
-click==8.2.1
-colorama==0.4.6
-Flask==3.1.1
-gunicorn==23.0.0
-itsdangerous==2.2.0
-Jinja2==3.1.6
-MarkupSafe==3.0.2
-packaging==25.0
-pyodbc==5.2.0
-Werkzeug==3.1.3
-
-especially: 
-Flask==2.3.3
-gunicorn==20.1.0
-
-
-"""
 
 from flask import Flask, redirect, render_template, request, url_for
 import sqlite3
